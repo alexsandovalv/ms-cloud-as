@@ -1,0 +1,32 @@
+server:
+  port: 8888
+
+spring:
+  application:
+    name: ms-data-config
+
+  profiles:
+    active: native
+
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: file:///${REPOSITORY_CONFIG:C:/workspace/wkTrainning/banking-as/zconfigurations/}
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "health,refresh"
+
+  health:
+    readinessstate:
+      enabled: true
+    livenessstate:
+      enabled: true
+
+  endpoint:
+    health:
+      probes:
+        enabled: true
