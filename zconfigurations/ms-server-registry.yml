@@ -9,4 +9,6 @@ eureka:
     fetch-registry: false
     serviceUrl:
       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka
+    webclient:
+      enable: true
   wait-time-in-ms-when-sync-empty: 0

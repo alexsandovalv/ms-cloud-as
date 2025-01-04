@@ -3,16 +3,18 @@ server:
 
 spring:
   application:
-    name: ms-data-config
+    name: ms-server-config
 
   profiles:
     active: native
 
   cloud:
     config:
+      fail-fast: true
       server:
         native:
           search-locations: file:///${REPOSITORY_CONFIG:C:/workspace/wkTrainning/banking-as/zconfigurations/}
+
 
 management:
   endpoints:

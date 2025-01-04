@@ -1,4 +1,4 @@
-package com.sanvic.infrastructure.dataconfig;
+package com.sanvic.infrastructure.serverconfig;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

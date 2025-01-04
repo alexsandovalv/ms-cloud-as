@@ -12,6 +12,12 @@
     <artifactId>ms-account-service</artifactId>
     <version>1.0.0</version>
     <name>ms-account-service</name>
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-config-server</artifactId>
+        </dependency>
+    </dependencies>
 
     <build>
         <plugins>
